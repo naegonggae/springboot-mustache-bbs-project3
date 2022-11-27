@@ -1,5 +1,6 @@
 package com.mustache.bbsproject3.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Table(name= "Article3")
 @Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
